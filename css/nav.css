@@ -11,6 +11,7 @@ body {
     background-color: #ffffff;
     display: flex;
     overflow-x: auto;
+    float: left;
 }
 
 .nav__link {
