@@ -6,21 +6,33 @@ body {margin:0;}
 h2 {color : red;}
 .navbar {
   overflow: auto;
-  background-color: #333;
+  background-color: white;
   position: fixed;
   bottom: 0;
   width: 100%;
+    box-shadow:0px -1px 1px rgb(240,240,240);
 }
 
 .navbar a {
   float: left;
-  width: 25%;
-  color: #f2f2f2;
+  width: 20%;
+  color: black;
   text-align: center;
-  padding: 12px;
+
+  
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
+  height:8%;    
    
+}
+
+.navbar i {
+    font-size:20px;
+    padding-top: 10px;
+}
+
+.add_cercle {
+    font-size: 50px;
 }
 
 .navbar a:hover {
@@ -31,7 +43,7 @@ h2 {color : red;}
 
 .main {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 70px;
     margin-left: 20px;
     height: 2600px;
@@ -40,17 +52,20 @@ h2 {color : red;}
 #screenFiller {
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
-    background-color: coral;
+    background-color: darkorchid;
     height:50px;
     text-align: center;
-    padding: 10px;
+    padding: 3px;
     font-weight: bold;
     font-size: 30px;
+    color:white;
+    z-index: 1;
 }
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
+ -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   
   .card {
@@ -58,10 +73,23 @@ h2 {color : red;}
   }
 }
 
-.card {
-  border: 2px solid $red;
-  width: 150px;
-  height: 75px;
-  background: black;
+.card1 {
+
+  width: 210px;
+  height: 150px;
+  
     display: inline-block;
 }
+
+.sous-titre {
+    font-size:15px;
+    color:darkgray;
+}
+
+.card {
+
+  width: 200px;
+  height: 130px;
+
+}
+
